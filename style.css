@@ -1,0 +1,377 @@
+:root{
+    --facebook : #3b5998;
+    --twitter : #1D9BF0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100vw;
+    height: 4rem;
+    background-color: #1975b2;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.white-color {
+    color: white;
+}
+
+.right{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.call {
+    text-decoration: none;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 15%;
+}
+
+.social-media-button {
+    outline: 2px solid white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50%;
+}
+.social-media-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.social-media-button img{
+    transition: all 0.3s;
+    height: 18px;
+    width: 18px;
+}
+
+.social-media-button:hover {
+    transform: scale(1.2);
+}
+
+.social-media-button:hover:nth-child(1){
+    background:  radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    ); 
+}
+.social-media-button:hover:nth-child(2){
+    background-color: var(--facebook);
+}
+.social-media-button:hover:nth-child(3){
+    background-color: var(--twitter);
+}
+
+.NAV{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+
+.logo{
+    /* margin-right: auto; */
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 120px;
+    width: 120px;
+}
+
+.tags{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    /* align-items: ; */
+    gap: 3%;
+}
+
+.tag{
+    
+    justify-content: center;
+    margin-top: 3%;
+    display: inline-block;
+}
+
+.tag span{
+    color: #1975b2;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    /* width: fit-content; */
+}
+
+.tags a{
+    text-decoration: none;
+    color: #1975b2;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+
+.tag a:hover {
+    color:rgb(62, 70, 130) !important;
+}
+
+.tag img{
+    height: 15px;
+    width: 20px;
+    /* display: inline-block; */
+    /* padding-top: 3px; */
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    min-width: 220px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    display: block;
+    padding: 4px;
+
+}
+.tag img{
+    transition: transform 0.3s linear;
+}
+.services:hover .sr{
+    display: block;
+}
+.services:hover img{
+    transform: rotate(-180deg);
+}
+.doctor:hover .dr{
+    display: block;
+}
+.doctor:hover img{
+    transform: rotate(-180deg);
+}
+
+
+
+
+.bigimg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+  
+  .bigimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./bigimg.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity value (0.5) for desired transparency */
+  }
+  
+  .bigimg h2 {
+    font-size: 2rem;
+    color: #000000;
+  }
+
+  .bigimg h1 {
+    font-size: 4rem;
+    color: #000000;
+  }
+  
+  .quote{
+    left: 50%;
+  }
+
+  .Intro h1{
+    color: #000000 !important;
+    text-align: center;
+    margin-top: 2%;
+    font-family: inherit;
+    font-size: 2.5rem;
+  }
+
+.intro{
+    text-align: center;
+    width: 80%;
+    margin-left:10%;
+    margin-top: 1%;
+}
+.intro p{
+    color: #000000 !important;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.appointment {
+    height: 100vh;
+}
+
+.bg{
+    background-color: #D3EBF7ff;
+    margin-top: 5%;
+    height: 90vh;
+    width: 100vw;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 7%;
+}
+
+.photu {
+    width: 40%;
+    flex: right;
+}
+
+.photu img{
+    width: 100%;
+}
+
+
+
+
+
+.form {
+    width: 30%;
+    /* height: 300px; */
+}
+
+.book-appointment {
+    background-color: #ABD7E7ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(126, 186, 229, 0.1);
+    padding: 3%;
+    /* width: 50rem; */
+    /* height: em; */
+    /* height: 100%; */
+  }
+  
+.book-appointment h1{
+    font-size: 2.3rem;
+    /* justify-content: center; */
+    /* justify-self: center; */
+    padding: 5%;
+    /* color: #d92b14 !important; */
+}
+
+  .form-row {
+    margin-bottom: 15px;
+    padding: 1.2%;
+    position: relative;
+    display: flex; /* Add this to create a flex container */
+    align-items: center; /* Vertically align items */
+  }
+
+.form-row i{
+    font-size: 19px;
+}
+  
+  /* Style icons */
+  .form-row span {
+    margin-right: 10px; /* Add some spacing between the icon and input/select */
+  }
+  
+.wpcf7-form-control-wrap {
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+/* gap: 2%; */
+}
+
+  .wpcf7-form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+
+  .wpcf7-select {
+    appearance: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #06335b67;
+    border-radius: 4px;
+    font-size: 14px;
+    background: url('arrow-down.png') no-repeat right center;
+    background-size: 20px;
+
+  }
+
+.wpcf7-select option{
+    background-color: #5398e1;
+}
+  
+
+  .wpcf7-submit {
+    background-color: rgb(98, 196, 238);
+    color: #f9f7f7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .wpcf7-submit:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .wpcf7-spinner {
+    display: inline-block;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
