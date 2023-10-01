@@ -33,7 +33,7 @@ header{
     width: 50%;
     align-items: center;
     justify-content: space-between;
-    gap: 5%;
+    gap: 4%;
 }
 
 .call {
@@ -267,9 +267,6 @@ header{
 }
 
 
-
-
-
 .form {
     width: 30%;
     /* height: 300px; */
@@ -357,7 +354,6 @@ align-items: center;
     background-color: #0056b3;
   }
   
-
   .wpcf7-spinner {
     display: inline-block;
     margin-left: 10px;
@@ -375,3 +371,4 @@ align-items: center;
     }
   }
   
+
